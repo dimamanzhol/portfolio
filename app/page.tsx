@@ -1,65 +1,104 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-[#0f0f0f] px-6 py-16 font-mono md:px-12 lg:px-24">
+      {/* Header - Name */}
+      <header className="mb-24 text-center">
+        <h1 className="text-sm font-normal uppercase tracking-widest text-white">
+          dinmukhamed amanzhol
+        </h1>
+      </header>
+
+      {/* About Section */}
+      <section className="mx-auto mb-24 max-w-4xl">
+        <p className="mb-6 text-2xl font-normal leading-relaxed text-white md:text-3xl lg:text-4xl">
+          I&apos;m a software engineer building sexy AI products. At 18, coding
+          since 16, designing since 15. Currently building cool landing pages
+          for companies solving real problems.
+        </p>
+        <p className="text-2xl font-normal text-[#6b6b6b] md:text-3xl lg:text-4xl">
+          Based in Almaty, Kazakhstan.
+        </p>
+      </section>
+
+      {/* Three Column Grid */}
+      <section className="mx-auto grid max-w-5xl gap-12 md:grid-cols-4">
+        {/* Services */}
+        <div className="md:col-span-1">
+          <h2 className="mb-6 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+            Services
+          </h2>
+          <ul className="space-y-2 text-sm text-[#9a9a9a]">
+            <li>AI Products</li>
+            <li>Landing Pages</li>
+            <li>Web Applications</li>
+            <li>UI/UX Design</li>
+            <li>Front-end Development</li>
+            <li>Interactive Design</li>
+          </ul>
+        </div>
+
+        {/* Spacer for visual balance */}
+        <div className="hidden md:block md:col-span-1" />
+
+        {/* Experience */}
+        <div className="md:col-span-1">
+          <h2 className="mb-6 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+            Experience
+          </h2>
+          <ul className="space-y-2 text-sm text-[#9a9a9a]">
+            <li>INO Center</li>
+            <li>TrueSpace (EdTech)</li>
+            <li>Onai Agency</li>
+            <li>
+              <a
+                href="#"
+                className="inline-flex items-center gap-1 text-white transition-colors hover:text-[#9a9a9a]"
+                tabIndex={0}
+                aria-label="View CS & AI studies at IITU"
+              >
+                CS & AI at IITU
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div className="md:col-span-1">
+          <h2 className="mb-6 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+            Contact
+          </h2>
+          <p className="mb-4 text-sm leading-relaxed text-[#9a9a9a]">
+            Want to discuss a project or idea? Get in touch.
           </p>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <a
+                href="mailto:hello@dinmukhamed.com"
+                className="inline-flex items-center gap-1 text-white transition-colors hover:text-[#9a9a9a]"
+                tabIndex={0}
+                aria-label="Send email"
+              >
+                hello@dinmukhamed.com
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/dinmukhamed"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-white transition-colors hover:text-[#9a9a9a]"
+                tabIndex={0}
+                aria-label="Visit Twitter profile"
+              >
+                @dinmukhamed
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
