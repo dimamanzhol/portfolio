@@ -11,9 +11,10 @@ export default function Home() {
       {/* About Section */}
       <section className="mx-auto mb-24 max-w-4xl">
         <p className="mb-6 text-2xl font-normal leading-relaxed text-white md:text-3xl lg:text-4xl">
-          I&apos;m a software engineer building sexy AI products. At 18, coding
-          since 16, designing since 15. Currently building cool landing pages
-          for companies solving real problems.
+          I’m a software engineer obsessed with building beautiful products.
+          Started coding at 16. Designing at 15. Now I build products — from AI
+          systems to landing pages — for companies that don’t play games. Sexy
+          products. Real impact. Zero bullshit.
         </p>
         <p className="text-2xl font-normal text-[#6b6b6b] md:text-3xl lg:text-4xl">
           Based in Almaty, Kazakhstan.
@@ -134,9 +135,11 @@ export default function Home() {
                 About
               </h3>
               <p className="mb-6 text-sm leading-relaxed text-[#9a9a9a]">
-                AI-powered platform transforming how businesses interact with
-                customers through intelligent automation and natural language
-                processing.
+                Armeta is a modern, Next.js-based marketing website for an
+                AI-powered platform that automates construction and engineering
+                project reviews. The project is built as a high-performance,
+                visually appealing single-page application showcasing Armeta's
+                core value proposition.
               </p>
 
               <div className="mb-6 grid grid-cols-2 gap-4">
@@ -195,7 +198,10 @@ export default function Home() {
         </article>
 
         {/* Project 2 - Yoink */}
-        <article id="project2" className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]">
+        <article
+          id="project2"
+          className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]"
+        >
           <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
             <video
               autoPlay
@@ -224,9 +230,11 @@ export default function Home() {
                 About
               </h3>
               <p className="mb-6 text-sm leading-relaxed text-[#9a9a9a]">
-                Smart clipboard manager that helps you organize and access your
-                copy history across devices with intelligent search and
-                categorization.
+                Yoink is an AI-powered web development platform that enables
+                users to build, edit, and publish landing pages through a visual
+                editor with AI assistance. It's a Next.js application with
+                Supabase backend that provides a terminal-inspired interface for
+                creating studio-quality websites.
               </p>
 
               <div className="mb-6 grid grid-cols-2 gap-4">
@@ -285,7 +293,10 @@ export default function Home() {
         </article>
 
         {/* Project 3 - Knewit */}
-        <article id="project3" className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]">
+        <article
+          id="project3"
+          className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]"
+        >
           <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
             <video
               autoPlay
@@ -314,8 +325,9 @@ export default function Home() {
                 About
               </h3>
               <p className="mb-6 text-sm leading-relaxed text-[#9a9a9a]">
-                Knowledge management platform powered by AI that helps teams
-                capture, organize, and retrieve information intelligently.
+                KnewIT is a modern coding school platform based in Kazakhstan,
+                built as a Next.js application with a comprehensive landing page
+                and student dashboard system.
               </p>
 
               <div className="mb-6 grid grid-cols-2 gap-4">
@@ -374,7 +386,10 @@ export default function Home() {
         </article>
 
         {/* Project 4 - Prompt Optimizer */}
-        <article id="project4" className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]">
+        <article
+          id="project4"
+          className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]"
+        >
           <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
             <video
               autoPlay
@@ -463,7 +478,10 @@ export default function Home() {
         </article>
 
         {/* Project 5 - Stage */}
-        <article id="project5" className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]">
+        <article
+          id="project5"
+          className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]"
+        >
           <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
             <video
               autoPlay
