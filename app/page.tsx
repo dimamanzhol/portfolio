@@ -21,26 +21,8 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Three Column Grid */}
-      <section className="mx-auto grid max-w-5xl gap-12 md:grid-cols-4 animate-fade-in animate-delay-200">
-        {/* Services */}
-        <div className="md:col-span-1">
-          <h2 className="mb-6 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
-            Services
-          </h2>
-          <ul className="space-y-2 text-sm text-[#9a9a9a]">
-            <li>AI Products</li>
-            <li>Landing Pages</li>
-            <li>Web Applications</li>
-            <li>UI/UX Design</li>
-            <li>Front-end Development</li>
-            <li>Interactive Design</li>
-          </ul>
-        </div>
-
-        {/* Spacer for visual balance */}
-        <div className="hidden md:block md:col-span-1" />
-
+      {/* Two Column Grid */}
+      <section className="mx-auto grid max-w-5xl gap-12 md:grid-cols-2 animate-fade-in animate-delay-200">
         {/* Experience */}
         <div className="md:col-span-1">
           <h2 className="mb-6 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
