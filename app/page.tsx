@@ -1,15 +1,15 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0f0f0f] px-6 py-16 font-mono md:px-12 lg:px-24">
+    <main className="min-h-screen bg-[#1a1a1a] px-6 py-16 font-mono md:px-12 lg:px-24">
       {/* Header - Name */}
-      <header className="mb-24 text-center">
+      <header className="mb-24 text-center animate-fade-in">
         <h1 className="text-sm font-normal uppercase tracking-widest text-white">
           dinmukhamed amanzhol
         </h1>
       </header>
 
       {/* About Section */}
-      <section className="mx-auto mb-24 max-w-4xl">
+      <section className="mx-auto mb-24 max-w-4xl animate-fade-in animate-delay-100">
         <p className="mb-6 text-2xl font-normal leading-relaxed text-white md:text-3xl lg:text-4xl">
           I’m a software engineer obsessed with building beautiful products.
           Started coding at 16. Designing at 15. Now I build products — from AI
@@ -22,7 +22,7 @@ export default function Home() {
       </section>
 
       {/* Three Column Grid */}
-      <section className="mx-auto grid max-w-5xl gap-12 md:grid-cols-4">
+      <section className="mx-auto grid max-w-5xl gap-12 md:grid-cols-4 animate-fade-in animate-delay-200">
         {/* Services */}
         <div className="md:col-span-1">
           <h2 className="mb-6 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
@@ -86,14 +86,40 @@ export default function Home() {
             </li>
             <li>
               <a
+                href="https://www.instagram.com/dimamanzhol"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-white transition-colors hover:text-[#9a9a9a]"
+                tabIndex={0}
+                aria-label="Visit Instagram profile"
+              >
+                Instagram
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/dinmukhamed-amanzhol-686865359/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-white transition-colors hover:text-[#9a9a9a]"
+                tabIndex={0}
+                aria-label="Visit LinkedIn profile"
+              >
+                LinkedIn
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://x.com/dimamanzhol"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-white transition-colors hover:text-[#9a9a9a]"
                 tabIndex={0}
-                aria-label="Visit Twitter profile"
+                aria-label="Visit X profile"
               >
-                @dimamanzhol
+                X
                 <span aria-hidden="true">↗</span>
               </a>
             </li>
@@ -102,7 +128,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section className="mt-32">
+      <section className="mt-32 animate-fade-in animate-delay-300">
         {/* Project 1 - Armeta */}
         <article className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]">
           {/* Left - Project Preview */}
@@ -148,9 +174,9 @@ export default function Home() {
                     Summary
                   </h4>
                   <ul className="space-y-1 text-sm text-[#9a9a9a]">
-                    <li>• AI/ML Integration</li>
-                    <li>• Responsive Design</li>
-                    <li>• Real-time Processing</li>
+                    <li>• AI Construction Reviews</li>
+                    <li>• Marketing Website</li>
+                    <li>• Next.js</li>
                   </ul>
                 </div>
                 <div>
@@ -243,9 +269,9 @@ export default function Home() {
                     Summary
                   </h4>
                   <ul className="space-y-1 text-sm text-[#9a9a9a]">
-                    <li>• Cross-platform Sync</li>
-                    <li>• Smart Search</li>
-                    <li>• Cloud Storage</li>
+                    <li>• AI Web Builder</li>
+                    <li>• Visual Editor</li>
+                    <li>• Next.js + Supabase</li>
                   </ul>
                 </div>
                 <div>
@@ -336,9 +362,9 @@ export default function Home() {
                     Summary
                   </h4>
                   <ul className="space-y-1 text-sm text-[#9a9a9a]">
-                    <li>• AI-powered Search</li>
-                    <li>• Team Collaboration</li>
-                    <li>• Smart Organization</li>
+                    <li>• Coding School Platform</li>
+                    <li>• Student Dashboard</li>
+                    <li>• Landing Page</li>
                   </ul>
                 </div>
                 <div>
@@ -428,8 +454,8 @@ export default function Home() {
                     Summary
                   </h4>
                   <ul className="space-y-1 text-sm text-[#9a9a9a]">
-                    <li>• Real-time Optimization</li>
-                    <li>• Prompt Analytics</li>
+                    <li>• AI Prompt Enhancement</li>
+                    <li>• Real-time Suggestions</li>
                     <li>• Template Library</li>
                   </ul>
                 </div>
@@ -521,9 +547,9 @@ export default function Home() {
                     Summary
                   </h4>
                   <ul className="space-y-1 text-sm text-[#9a9a9a]">
-                    <li>• Live Streaming</li>
-                    <li>• Virtual Venues</li>
-                    <li>• Real-time Interaction</li>
+                    <li>• Live Performance Platform</li>
+                    <li>• Virtual Events</li>
+                    <li>• Real-time Streaming</li>
                   </ul>
                 </div>
                 <div>
