@@ -102,14 +102,19 @@ export default function Home() {
 
       {/* Projects Section */}
       <section className="mt-32">
-        {/* Project 1 */}
+        {/* Project 1 - Armeta */}
         <article className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]">
           {/* Left - Project Preview */}
-          <div className="aspect-video w-full bg-[#f5f5f5]">
-            {/* Placeholder for project image/video */}
-            <div className="flex h-full items-center justify-center text-[#9a9a9a]">
-              Project Preview
-            </div>
+          <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-full object-cover"
+            >
+              <source src="/armeta-portfolio.mp4" type="video/mp4" />
+            </video>
           </div>
 
           {/* Right - Project Details */}
@@ -119,9 +124,9 @@ export default function Home() {
                 href="#"
                 className="mb-6 inline-flex items-center gap-1 text-sm text-[#6b6b6b] transition-colors hover:text-white"
                 tabIndex={0}
-                aria-label="Visit project website"
+                aria-label="Visit Armeta project"
               >
-                projectname.com
+                armeta.ai
                 <span aria-hidden="true">↗</span>
               </a>
 
@@ -129,9 +134,9 @@ export default function Home() {
                 About
               </h3>
               <p className="mb-6 text-sm leading-relaxed text-[#9a9a9a]">
-                Website designed to feel fast without sacrificing animations.
-                Each page features an initial load animation, ensuring instant
-                navigation while maintaining a smooth experience.
+                AI-powered platform transforming how businesses interact with
+                customers through intelligent automation and natural language
+                processing.
               </p>
 
               <div className="mb-6 grid grid-cols-2 gap-4">
@@ -140,9 +145,9 @@ export default function Home() {
                     Summary
                   </h4>
                   <ul className="space-y-1 text-sm text-[#9a9a9a]">
-                    <li>• Interactive animation</li>
-                    <li>• Reveal animations</li>
-                    <li>• Smooth transitions</li>
+                    <li>• AI/ML Integration</li>
+                    <li>• Responsive Design</li>
+                    <li>• Real-time Processing</li>
                   </ul>
                 </div>
                 <div>
@@ -153,9 +158,9 @@ export default function Home() {
                     href="#"
                     className="inline-flex items-center gap-1 text-sm text-white transition-colors hover:text-[#9a9a9a]"
                     tabIndex={0}
-                    aria-label="Visit live project"
+                    aria-label="Visit live Armeta project"
                   >
-                    projectname.com
+                    armeta.ai
                     <span aria-hidden="true">↗</span>
                   </a>
                 </div>
@@ -172,13 +177,13 @@ export default function Home() {
                   <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
                     With
                   </h4>
-                  <p className="text-sm text-[#9a9a9a]">Client Name</p>
+                  <p className="text-sm text-[#9a9a9a]">Armeta Team</p>
                 </div>
               </div>
             </div>
 
             <a
-              href="#"
+              href="#project2"
               className="mt-8 inline-flex items-center gap-1 text-sm text-[#6b6b6b] transition-colors hover:text-white"
               tabIndex={0}
               aria-label="Jump to next project"
@@ -189,12 +194,18 @@ export default function Home() {
           </div>
         </article>
 
-        {/* Project 2 */}
-        <article className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]">
-          <div className="aspect-video w-full bg-[#f5f5f5]">
-            <div className="flex h-full items-center justify-center text-[#9a9a9a]">
-              Project Preview
-            </div>
+        {/* Project 2 - Yoink */}
+        <article id="project2" className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]">
+          <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-full object-cover"
+            >
+              <source src="/yoink-portfolio.mp4" type="video/mp4" />
+            </video>
           </div>
 
           <div className="flex flex-col justify-between">
@@ -203,9 +214,9 @@ export default function Home() {
                 href="#"
                 className="mb-6 inline-flex items-center gap-1 text-sm text-[#6b6b6b] transition-colors hover:text-white"
                 tabIndex={0}
-                aria-label="Visit project website"
+                aria-label="Visit Yoink project"
               >
-                anotherproject.com
+                yoink.app
                 <span aria-hidden="true">↗</span>
               </a>
 
@@ -213,8 +224,9 @@ export default function Home() {
                 About
               </h3>
               <p className="mb-6 text-sm leading-relaxed text-[#9a9a9a]">
-                Description of another project. What problem it solves and the
-                approach taken to build it.
+                Smart clipboard manager that helps you organize and access your
+                copy history across devices with intelligent search and
+                categorization.
               </p>
 
               <div className="mb-6 grid grid-cols-2 gap-4">
@@ -223,9 +235,9 @@ export default function Home() {
                     Summary
                   </h4>
                   <ul className="space-y-1 text-sm text-[#9a9a9a]">
-                    <li>• Feature one</li>
-                    <li>• Feature two</li>
-                    <li>• Feature three</li>
+                    <li>• Cross-platform Sync</li>
+                    <li>• Smart Search</li>
+                    <li>• Cloud Storage</li>
                   </ul>
                 </div>
                 <div>
@@ -236,9 +248,9 @@ export default function Home() {
                     href="#"
                     className="inline-flex items-center gap-1 text-sm text-white transition-colors hover:text-[#9a9a9a]"
                     tabIndex={0}
-                    aria-label="Visit live project"
+                    aria-label="Visit live Yoink project"
                   >
-                    anotherproject.com
+                    yoink.app
                     <span aria-hidden="true">↗</span>
                   </a>
                 </div>
@@ -249,19 +261,19 @@ export default function Home() {
                   <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
                     Year
                   </h4>
-                  <p className="text-sm text-[#9a9a9a]">2024</p>
+                  <p className="text-sm text-[#9a9a9a]">2025</p>
                 </div>
                 <div>
                   <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
                     With
                   </h4>
-                  <p className="text-sm text-[#9a9a9a]">Client Name</p>
+                  <p className="text-sm text-[#9a9a9a]">Yoink Team</p>
                 </div>
               </div>
             </div>
 
             <a
-              href="#"
+              href="#project3"
               className="mt-8 inline-flex items-center gap-1 text-sm text-[#6b6b6b] transition-colors hover:text-white"
               tabIndex={0}
               aria-label="Jump to next project"
@@ -269,6 +281,264 @@ export default function Home() {
               Jump to next project
               <span aria-hidden="true">↓</span>
             </a>
+          </div>
+        </article>
+
+        {/* Project 3 - Knewit */}
+        <article id="project3" className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]">
+          <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-full object-cover"
+            >
+              <source src="/knewit-portfolio.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div className="flex flex-col justify-between">
+            <div>
+              <a
+                href="#"
+                className="mb-6 inline-flex items-center gap-1 text-sm text-[#6b6b6b] transition-colors hover:text-white"
+                tabIndex={0}
+                aria-label="Visit Knewit project"
+              >
+                knewit.com
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <h3 className="mb-4 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                About
+              </h3>
+              <p className="mb-6 text-sm leading-relaxed text-[#9a9a9a]">
+                Knowledge management platform powered by AI that helps teams
+                capture, organize, and retrieve information intelligently.
+              </p>
+
+              <div className="mb-6 grid grid-cols-2 gap-4">
+                <div>
+                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                    Summary
+                  </h4>
+                  <ul className="space-y-1 text-sm text-[#9a9a9a]">
+                    <li>• AI-powered Search</li>
+                    <li>• Team Collaboration</li>
+                    <li>• Smart Organization</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                    View project
+                  </h4>
+                  <a
+                    href="#"
+                    className="inline-flex items-center gap-1 text-sm text-white transition-colors hover:text-[#9a9a9a]"
+                    tabIndex={0}
+                    aria-label="Visit live Knewit project"
+                  >
+                    knewit.com
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                    Year
+                  </h4>
+                  <p className="text-sm text-[#9a9a9a]">2025</p>
+                </div>
+                <div>
+                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                    With
+                  </h4>
+                  <p className="text-sm text-[#9a9a9a]">Knewit Team</p>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="#project4"
+              className="mt-8 inline-flex items-center gap-1 text-sm text-[#6b6b6b] transition-colors hover:text-white"
+              tabIndex={0}
+              aria-label="Jump to next project"
+            >
+              Jump to next project
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </article>
+
+        {/* Project 4 - Prompt Optimizer */}
+        <article id="project4" className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]">
+          <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-full object-cover"
+            >
+              <source src="/promptoptimizerdemodemo.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div className="flex flex-col justify-between">
+            <div>
+              <a
+                href="#"
+                className="mb-6 inline-flex items-center gap-1 text-sm text-[#6b6b6b] transition-colors hover:text-white"
+                tabIndex={0}
+                aria-label="Visit Prompt Optimizer project"
+              >
+                promptoptimizer.ai
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <h3 className="mb-4 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                About
+              </h3>
+              <p className="mb-6 text-sm leading-relaxed text-[#9a9a9a]">
+                AI tool that helps users craft better prompts for LLMs through
+                intelligent optimization and real-time suggestions.
+              </p>
+
+              <div className="mb-6 grid grid-cols-2 gap-4">
+                <div>
+                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                    Summary
+                  </h4>
+                  <ul className="space-y-1 text-sm text-[#9a9a9a]">
+                    <li>• Real-time Optimization</li>
+                    <li>• Prompt Analytics</li>
+                    <li>• Template Library</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                    View project
+                  </h4>
+                  <a
+                    href="#"
+                    className="inline-flex items-center gap-1 text-sm text-white transition-colors hover:text-[#9a9a9a]"
+                    tabIndex={0}
+                    aria-label="Visit live Prompt Optimizer project"
+                  >
+                    promptoptimizer.ai
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                    Year
+                  </h4>
+                  <p className="text-sm text-[#9a9a9a]">2025</p>
+                </div>
+                <div>
+                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                    With
+                  </h4>
+                  <p className="text-sm text-[#9a9a9a]">Open Source</p>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="#project5"
+              className="mt-8 inline-flex items-center gap-1 text-sm text-[#6b6b6b] transition-colors hover:text-white"
+              tabIndex={0}
+              aria-label="Jump to next project"
+            >
+              Jump to next project
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </article>
+
+        {/* Project 5 - Stage */}
+        <article id="project5" className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]">
+          <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-full object-cover"
+            >
+              <source src="/stagevision-portflio.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div className="flex flex-col justify-between">
+            <div>
+              <a
+                href="#"
+                className="mb-6 inline-flex items-center gap-1 text-sm text-[#6b6b6b] transition-colors hover:text-white"
+                tabIndex={0}
+                aria-label="Visit Stage project"
+              >
+                stage.app
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <h3 className="mb-4 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                About
+              </h3>
+              <p className="mb-6 text-sm leading-relaxed text-[#9a9a9a]">
+                Revolutionary platform for live performances and virtual events,
+                bringing artists and audiences together in immersive digital
+                spaces.
+              </p>
+
+              <div className="mb-6 grid grid-cols-2 gap-4">
+                <div>
+                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                    Summary
+                  </h4>
+                  <ul className="space-y-1 text-sm text-[#9a9a9a]">
+                    <li>• Live Streaming</li>
+                    <li>• Virtual Venues</li>
+                    <li>• Real-time Interaction</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                    View project
+                  </h4>
+                  <a
+                    href="#"
+                    className="inline-flex items-center gap-1 text-sm text-white transition-colors hover:text-[#9a9a9a]"
+                    tabIndex={0}
+                    aria-label="Visit live Stage project"
+                  >
+                    stage.app
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                    Year
+                  </h4>
+                  <p className="text-sm text-[#9a9a9a]">2025</p>
+                </div>
+                <div>
+                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
+                    With
+                  </h4>
+                  <p className="text-sm text-[#9a9a9a]">Stage Team</p>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
       </section>
