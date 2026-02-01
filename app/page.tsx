@@ -1,3 +1,42 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+
+const VideoPlayer = ({ src }: { src: string }) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.5 },
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <video
+      ref={videoRef}
+      loop
+      muted
+      playsInline
+      className="h-full w-full object-cover"
+    >
+      <source src={src} type="video/mp4" />
+    </video>
+  );
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#1a1a1a] px-6 py-16 font-mono md:px-12 lg:px-24">
@@ -114,15 +153,7 @@ export default function Home() {
         <article className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]">
           {/* Left - Project Preview */}
           <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="h-full w-full object-cover"
-            >
-              <source src="/armetademos.mp4" type="video/mp4" />
-            </video>
+            <VideoPlayer src="/armetademos.mp4" />
           </div>
 
           {/* Right - Project Details */}
@@ -210,15 +241,7 @@ export default function Home() {
           className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]"
         >
           <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="h-full w-full object-cover"
-            >
-              <source src="/yoinksdemo.mp4" type="video/mp4" />
-            </video>
+            <VideoPlayer src="/yoinksdemo.mp4" />
           </div>
 
           <div className="flex flex-col justify-between">
@@ -305,15 +328,7 @@ export default function Home() {
           className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]"
         >
           <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="h-full w-full object-cover"
-            >
-              <source src="/knewitdemos.mp4" type="video/mp4" />
-            </video>
+            <VideoPlayer src="/knewitdemos.mp4" />
           </div>
 
           <div className="flex flex-col justify-between">
@@ -398,15 +413,7 @@ export default function Home() {
           className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]"
         >
           <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="h-full w-full object-cover"
-            >
-              <source src="/prompt-optimizer-demos.mp4" type="video/mp4" />
-            </video>
+            <VideoPlayer src="/prompt-optimizer-demos.mp4" />
           </div>
 
           <div className="flex flex-col justify-between">
