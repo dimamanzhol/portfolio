@@ -101,8 +101,7 @@ export default function Home() {
                 tabIndex={0}
                 aria-label="Visit X profile"
               >
-                X
-                <span aria-hidden="true">↗</span>
+                X<span aria-hidden="true">↗</span>
               </a>
             </li>
           </ul>
@@ -122,7 +121,7 @@ export default function Home() {
               playsInline
               className="h-full w-full object-cover"
             >
-              <source src="/armeta-portfolio.mp4" type="video/mp4" />
+              <source src="/armetademos.mp4" type="video/mp4" />
             </video>
           </div>
 
@@ -218,7 +217,7 @@ export default function Home() {
               playsInline
               className="h-full w-full object-cover"
             >
-              <source src="/yoink-portfolio.mp4" type="video/mp4" />
+              <source src="/yoinksdemo.mp4" type="video/mp4" />
             </video>
           </div>
 
@@ -313,7 +312,7 @@ export default function Home() {
               playsInline
               className="h-full w-full object-cover"
             >
-              <source src="/knewit-portfolio.mp4" type="video/mp4" />
+              <source src="/knewitdemos.mp4" type="video/mp4" />
             </video>
           </div>
 
@@ -406,7 +405,7 @@ export default function Home() {
               playsInline
               className="h-full w-full object-cover"
             >
-              <source src="/promptoptimizerdemodemo.mp4" type="video/mp4" />
+              <source src="/prompt-optimizer-demos.mp4" type="video/mp4" />
             </video>
           </div>
 
@@ -469,99 +468,6 @@ export default function Home() {
                     With
                   </h4>
                   <p className="text-sm text-[#9a9a9a]">Open Source</p>
-                </div>
-              </div>
-            </div>
-
-            <a
-              href="#project5"
-              className="mt-8 inline-flex items-center gap-1 text-sm text-[#6b6b6b] transition-colors hover:text-white"
-              tabIndex={0}
-              aria-label="Jump to next project"
-            >
-              Jump to next project
-              <span aria-hidden="true">↓</span>
-            </a>
-          </div>
-        </article>
-
-        {/* Project 5 - Stage */}
-        <article
-          id="project5"
-          className="mb-24 grid gap-8 lg:grid-cols-[2fr_1fr]"
-        >
-          <div className="aspect-video w-full overflow-hidden rounded-lg bg-[#1a1a1a]">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="h-full w-full object-cover"
-            >
-              <source src="/stagevision-portflio.mp4" type="video/mp4" />
-            </video>
-          </div>
-
-          <div className="flex flex-col justify-between">
-            <div>
-              <a
-                href="#"
-                className="mb-6 inline-flex items-center gap-1 text-sm text-[#6b6b6b] transition-colors hover:text-white"
-                tabIndex={0}
-                aria-label="Visit Stage project"
-              >
-                stage.app
-                <span aria-hidden="true">↗</span>
-              </a>
-
-              <h3 className="mb-4 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
-                About
-              </h3>
-              <p className="mb-6 text-sm leading-relaxed text-[#9a9a9a]">
-                Revolutionary platform for live performances and virtual events,
-                bringing artists and audiences together in immersive digital
-                spaces.
-              </p>
-
-              <div className="mb-6 grid grid-cols-2 gap-4">
-                <div>
-                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
-                    Summary
-                  </h4>
-                  <ul className="space-y-1 text-sm text-[#9a9a9a]">
-                    <li>• Live Performance Platform</li>
-                    <li>• Virtual Events</li>
-                    <li>• Real-time Streaming</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
-                    View project
-                  </h4>
-                  <a
-                    href="#"
-                    className="inline-flex items-center gap-1 text-sm text-white transition-colors hover:text-[#9a9a9a]"
-                    tabIndex={0}
-                    aria-label="Visit live Stage project"
-                  >
-                    stage.app
-                    <span aria-hidden="true">↗</span>
-                  </a>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
-                    Year
-                  </h4>
-                  <p className="text-sm text-[#9a9a9a]">2025</p>
-                </div>
-                <div>
-                  <h4 className="mb-2 text-xs font-normal uppercase tracking-widest text-[#6b6b6b]">
-                    With
-                  </h4>
-                  <p className="text-sm text-[#9a9a9a]">Stage Team</p>
                 </div>
               </div>
             </div>
